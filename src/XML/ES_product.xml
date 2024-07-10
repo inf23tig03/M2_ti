@@ -1,0 +1,136 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+<stock>
+    <category id = "1" name = "clothing">
+
+        <product id = "1">
+            <name>T-shirt</name>
+            <price>19.99</price>
+            <description>Uma t-shirt casual e elegante para o seu dia-a-dia, combinando conforto com estilo.</description>
+        </product>
+
+        <product id = "2">
+            <name>Hoodie</name>
+            <price>29.99</price>
+            <description>Um hoodie quente e confortável, perfeito para se sentir aconchegado em qualquer ocasião.</description>
+        </product>
+
+        <product id = "3">
+            <name>Beanie</name>
+            <price>14.99</price>
+            <description>Um gorro de malha essencial para manter o calor nos dias mais frios, com um toque de estilo.</description>
+        </product>
+
+        <product id = "4">
+            <name>Chapeu</name>
+            <price>24.99</price>
+            <description>Um chapéu elegante que não só protege do sol, mas também completa o seu look com sofisticação.</description>
+        </product>
+
+        <product id = "5">
+            <name>Bandana</name>
+            <price>9.99</price>
+            <description>Uma bandana versátil, perfeita para complementar diversos estilos e ocasiões.</description>
+        </product>
+
+        <product id = "6">
+            <name>Pulseira</name>
+            <price>7.99</price>
+            <description>Uma pulseira elegante que adiciona um toque de moda ao seu pulso, seja para uso diário ou ocasiões especiais.</description>
+        </product>
+
+    </category>
+
+    <category id = "2" name = "acessories">
+
+        <product id = "1">
+            <name>Autocolante</name>
+            <price>3.99</price>
+            <description>Autocolantes decorativos para personalizar e adicionar um toque único aos seus pertences.</description>
+        </product>
+
+        <product id = "2">
+            <name>Pin</name>
+            <price>4.99</price>
+            <description>Pins colecionáveis que expressam os seus interesses e personalidade em pequenos detalhes.</description>
+        </product>
+
+        <product id = "3">
+            <name>Patches</name>
+            <price>5.99</price>
+            <description>Patches bordados que transformam qualquer peça de roupa numa declaração de estilo individual.</description>
+        </product>
+
+        <product id = "4">
+            <name>Porta-Chaves</name>
+            <price>8.99</price>
+            <description>Um porta-chaves prático e elegante que mantém as suas chaves seguras e acessíveis.</description>
+        </product>
+    </category>
+
+    <category id = "3" name = "tech gear">
+        <product id = "1">
+            <name>Pen USB</name>
+            <price>12.99</price>
+            <description> Uma pen USB portátil e fiável para armazenar e transportar os seus dados com facilidade.</description>
+        </product>
+
+        <product id = "2">
+            <name>Femtocell</name>
+            <price>99.99</price>
+            <description> Um dispositivo Femtocell que melhora significativamente a cobertura celular em sua casa ou escritório.</description>
+        </product>
+
+        <product id = "3">
+            <name>Flipper Zero</name>
+            <price>149.99</price>
+            <description> Um dispositivo versátil de hacking e IoT, ideal para entusiastas de tecnologia.</description>
+        </product>
+
+        <product id = "4">
+            <name>Kit Arduino</name>
+            <price>49.99</price>
+            <description>Um kit Arduino completo para iniciar ou expandir o seu conhecimento em programação e eletrónica.</description>
+        </product>
+    </category>
+
+    <category id = "4" name = "tickets">
+        <product id = "1">
+            <name>Bilhete Standard</name>
+            <price>29.99</price>
+            <description>Inclui acesso padrão ao evento, garantindo uma experiência completa e sem complicações.</description>
+        </product>
+
+        <product id = "2">
+            <name>Bilhete VIP</name>
+            <price>99.99</price>
+            <description>Acesso VIP que proporciona vantagens exclusivas, desde áreas premium até um serviço personalizado.</description>
+        </product>
+
+        <product id = "3">
+            <name>Bilhete Prmeium</name>
+            <price>59.99</price>
+            <description>Acesso premium que combina conveniência e benefícios adicionais para uma experiência inesquecível.</description>
+        </product>
+    </category>
+
+    <category id = "5" name = "art">
+
+        <product id = "1">
+            <name>Poster</name>
+            <price>19.99</price>
+            <description>Posters de alta qualidade que transformam qualquer espaço com arte e estilo.</description>
+        </product>
+
+        <product id = "2">
+            <name>Postal</name>
+            <price>4.99</price>
+            <description>Postais colecionáveis com designs únicos, perfeitos para enviar mensagens especiais ou decorar.</description>
+        </product>
+
+        <product id = "3">
+            <name>Bandeiras</name>
+            <price>29.99</price>
+            <description>Bandeiras que adicionam um toque de personalidade aos ambientes, ideais para eventos ou decoração.</description>
+        </product>
+    </category>
+</stock>
