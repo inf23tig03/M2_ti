@@ -13,5 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index !== 0) article.style.display = 'none';
     });
 
-    setInterval(MostraArtigo, 15000); //  
+    setInterval(MostraArtigo, 10000); //  
 });

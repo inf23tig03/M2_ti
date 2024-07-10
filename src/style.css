@@ -419,6 +419,20 @@ article:hover p, article:hover ul {
     font-size:medium;
     padding:10px;
 }
+
+.about ul
+{
+    text-decoration: none;
+    margin:0 auto;
+    padding :0px 0px 0px 30px;
+}
+
+.about li
+{
+    text-decoration: none;
+    padding: 5px 0px 5px 30px;
+    font-size: small;
+}
  
 .quote blockquote
 {
@@ -728,6 +742,10 @@ article:hover p, article:hover ul {
     font-style:oblique;
     color: #61bd2b;
     text-shadow: 2px 1px #000;
+}
+
+.product-box .price::before{
+    content : "€"
 }
 
 .product-container   :hover
