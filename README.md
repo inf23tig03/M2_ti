@@ -16,13 +16,14 @@ para auxilio do utilizador aqui estão facilitados links para navegação pelo r
 * XML
  
 
-## Report
-_Please add at least on section (a file) per Chapter. But you can add more._
-
+## Relatório
 
 ### Capitulo 1: [Apresentação do Projeto](doc/C1.md)
+
 ### Capitulo 2: [Interface](doc/C2.md)
+
 ### Capitulo 3: [Produto](doc/C3.md)
+
 ### Capitulo 4: [Apresentação](doc/C4.md)
   
 
