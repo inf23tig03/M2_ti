@@ -27,6 +27,10 @@ body
     margin: 0px;
     display: flex;
     flex-direction: column;
+
+    overflow-x: hidden;
+
+     
 }
 
 main
@@ -40,6 +44,50 @@ main
 }
 
 
+ /**/
+
+ .animation-wrapper {
+    position: fixed;
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#000 , #222);
+    z-index: 1000;
+    
+    animation: raiseUp 4.5s forwards ease-in-out;
+}
+
+ .animation-wrapper h1
+ {
+    color: #928d8d;
+    font-family: "Kremlin" , sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 0px;
+    text-decoration: none;
+ }
+
+@keyframes raiseUp  
+{
+    0% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+        visibility: hidden;
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+}
+/*---Animação--- */
 
 h1 
 {
@@ -84,13 +132,16 @@ hr
     position:  sticky ;
     top :0px;
     list-style-type: none;
-     
+    padding:10px;
+    margin:none;
+    z-index: 1;
 }
 
 .navbar ul
 {
     list-style-type: none;
     overflow: hidden;
+    margin: 0;
     
 }
  
@@ -100,28 +151,29 @@ hr
     color: white;
     text-align: center;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+     
     list-style-type: none;
     font-size: large;
     display: block;
     padding: 10px;
+    
+     
     
 }
 
 .navbar li
 {
     float: left;
+     
 }
-.navbar_main a:hover {
-    border-color: #00ff00;
-    background-image: linear-gradient(#00ff00 , #006600);
-    color: white;
-}
+ 
 
 
 .DropDown
 {
-    padding: 10px 15px;
-    
+    padding:  10px 10px 0px 10px ;
+    margin: 0;
 }
 .DropDown button
 {
@@ -130,27 +182,45 @@ hr
     border: none;
     font-size: large;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
-    padding: 0px;
+    padding :0px 0px 20px 0px;
     
 }
-.DropDown .Conteudo
+.DropDown .Conteudo     
 {
-    
-    float: left;
     position: absolute;
-    width: 35%;
-    
+    width: 100%;
     display: none;
-    background-color: #00ff00;
-    box-shadow: 1px 2px 1px rgb(0, 0, 0);
+    
+    right:0px;
+  
+ 
+    background-color: #00aa00;
+    border-radius: 0px 0px 10px 10px;
+
 }
 
-.DropDown:hover .Conteudo
+.DropDown .Conteudo a {
+    display: block;
+    padding: 10px;
+    color: #000000;  
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.DropDown:hover .Conteudo 
 {
     display: block;
+    
 }
 
+.Conteudo a:hover
+{
+    background-color: #004400;
+}
+
+ 
 .News h3
 {
     text-align: center;
@@ -158,47 +228,65 @@ hr
     border-radius: 15px;
     color: #00ff00;
 }
-article 
-{
+.News article {
     padding: 5px;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
-    width: 400px;
-    height: 330px;
+    width: 98%;
+    margin-right:100px;
+
+    height: auto;
+    max-height: 350px;  
     color: azure;
-    background-image: linear-gradient(#000,#00000088);
+    background-image: linear-gradient(#000, #00000088);
     border-radius: 20px;
-    
     display: block;
-    float: left;
-     
-    
+    z-index: 1;
+    transition: max-height 0.5s ease;
 }
 
-article img
-{
-    border: 1px white;
+article img {
+    border: 1px solid white;   
     border-radius: 20px;
-    align-items: center;
-    width: 400px;
+    width: 40%;
+    max-height: 200px;  
+    display: block;
+    margin: 0 auto 10px auto;  
 }
- 
-article:hover 
-{
-    
-    display:block;
-    height:fit-content;
-    background-image: linear-gradient(#000 , #000000c2)   ;
+
+article h2 {
+    margin: 10px auto;
+    text-align: center;
 }
+
+article:hover {
+    max-height: 1000px;  
+    background-image: linear-gradient(#000, #000000c2);
+}
+
+article p, article ul {
+    text-align: justify;
+    width: 70%;  
+    margin: 0 auto;  
+    display: none;
+}
+
+article:hover p, article:hover ul {
+    display: block;
+}
+
+
 
 .Aside
 {
-    margin-top: 400px;
+    margin-top: 20px;
     padding :10px;
     border-style: hidden;
     border-radius: 30px;
-    display:block;
-    position:absolute;    
+    float:left;
+    position:relative;    
+     
+
 
     background-color: #d4eed4;
     width: 20%;
@@ -235,15 +323,14 @@ article:hover
  
 .Testemonials
 {
-    margin-top: 400px;
-    margin-left: 330px;
-    margin-right: 147px;
+    margin-top:20px;
+    margin-left: 280px;
+     
     
 
-
     font-weight: lighter;
-    width:fit-content;
-    max-height: 780px;
+    width: 74%;
+    max-height: 850px;
     align-items: center;
     padding :10px;
 
@@ -252,7 +339,7 @@ article:hover
     border-style: hidden;
     border-radius: 30px;
     
-    position:absolute;    
+    position:relative;    
 
     background-color: #c3c3c3   ;
     
@@ -273,13 +360,17 @@ article:hover
     border-radius: 30px;
 
 }
-.footer
-{
-    
-    padding: 40px;
+.footer {
     background-color: #000;
-    
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;  
+    clear: both;  
+    margin-top: 20px;  
+    z-index: 1;  
 }
+
 
 /*Pagina Sobre*/
 
@@ -642,4 +733,33 @@ article:hover
 .product-container   :hover
 {
     cursor: pointer;
+}
+#DownloadLink {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #4CAF50;  
+    padding: 10px 20px;  
+    border-radius: 5px;  
+    border: 1px solid #388E3C;  
+    transition: background-color 0.3s ease;  
+
+     
+    position: relative;
+    top: 20px;
+    margin: 0px auto; 
+
+     
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#DownloadLink:hover {
+    background-color: #45a049;  
+}
+
+#DownloadLink:active {
+    background-color: #1E6823;  
 }
